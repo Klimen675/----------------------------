@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+.sidebar .profile-pic img {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.top-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.top-bar .add-course {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-card {
+    width: calc(33.333% - 20px);
+    background-color: #e0f7fa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card .course-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-card .instructor {
+    font-size: 16px;
+    color: #666;
+}
+/* */
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A2859;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.course-header .course-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.video-call {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-video-call img{
+    width: 25px;
+    height: 25px;
+    margin-left: 150px;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.task-item {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.task-item .task-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-item .task-desc {
+    font-size: 16px;
+    color: #666;
+}
+
+.sidebar .profile-pic img {
+    width: 100
+}
+
+.sidebar2 {
+    width: 200px;
+    background-color: #e0e0e0;
+    padding-top: 20px;
+}
+
+.files {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-list {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.file-item {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.file-item .file-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.file-item .file-desc {
+    font-size: 16px;
+    color: #666;
+}
+
+.sidebar2 input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 600px;
+    margin-left: 10px;
+}
+
+.course-header .add-file {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #000000;
+    width: calc(100% / 91); 
+}
+th {
+    background-color: #e0f7fa;
+    color: rgb(0, 0, 0);
+}
+
+td:first-child{
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #000;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+/* */
+.profile-card {
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 50px;
+}
+
+.profile-name {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.age {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.profile-role, .profile-location {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    padding: 15px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.profile-specialisation{
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+/* */
+.chat-container {
+    display: flex;
+    height: 98%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.sidebar-chat {
+    width: 20%;
+    background-color: #2A2859;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background-color: #2A2859;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+}
+
+.sidebar-header .badge {
+    background-color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.chat-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0f7fa;
+}
+
+.chat-item:hover {
+    background-color: #e0f7fa;
+    color: #000;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #bdc3c7;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-info {
+    flex: 1;
+}
+
+.chat-info h4 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.chat-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ecf0f1;
+}
+
+.chat-date {
+    font-size: 0.8em;
+    color: #95a5a6;
+}
+
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.user-info h2 {
+    margin: 0;
+}
+
+.user-info .status {
+    font-size: 0.8em;
+    color: #7f8c8d;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    background-color: #dfe6e9;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.message-content img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.message-content p {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message-date {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #7f8c8d;
+    text-align: right;
+}
+
+.chat-input {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-top: 1px solid #bdc3c7;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+}
